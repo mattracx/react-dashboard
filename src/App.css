@@ -9,6 +9,7 @@
 
 html {
   font-smooth: always;
+  -webkit-font-smoothing: antialiased;
 }
 
 .Content {
@@ -49,7 +50,8 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(10px + 2vmin); */
+  font-size: 14px;
   color: white;
 }
 

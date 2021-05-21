@@ -1,5 +1,5 @@
 .Sidebar {
-    font-size: 14px;
+    font-size: 13px;
     
 
     margin: 0;
@@ -11,6 +11,6 @@
     display: flex;
     justify-content: center;
     background-color: #171717;
-    width: 300px;
+    width: 280px;
     flex-grow: 0;
 }

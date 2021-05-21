@@ -5,8 +5,8 @@ ul {
     width: 100%;
 }
 li {
-    margin: 10px 0px 10px 20px;
-    padding: 10px;
+    margin: 30px 4px 30px 40px;
+    padding: 0px;
     color: rgb(116, 116, 116);
     font-weight: bold;
 }
@@ -17,8 +17,14 @@ li > svg {
 li > .svg-inline--fa {
     font-size: 18px;
 }
-li:hover {
+li:hover, li.active {
     /*background-color: #1e1e1e;*/
     /*border-radius: 10px;*/
     cursor: pointer;
+    border-right: 4px solid #FFF;
+    border-radius: 2px;
+    color: #FFF;
+}
+li:hover > svg, li.active > svg {
+    color: #FFF;
 }
