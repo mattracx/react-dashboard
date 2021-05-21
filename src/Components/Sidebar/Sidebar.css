@@ -1,0 +1,16 @@
+.Sidebar {
+    font-size: 14px;
+    
+
+    margin: 0;
+    
+    color: #FFF;
+    
+    /*align-items: center;*/
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    background-color: #171717;
+    width: 300px;
+    flex-grow: 0;
+}
