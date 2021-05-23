@@ -3,6 +3,14 @@ ul {
     margin: 50px 0px;
     padding: 0;
     width: 100%;
+    height: fit-content;
+}
+ul > label {
+    display: block;
+    margin-left: 60px;
+    color: rgb(116, 116, 116);
+    font-size: 12px;
+    font-weight: bold;
 }
 li {
     margin: 30px 4px 30px 40px;
@@ -10,21 +18,44 @@ li {
     color: rgb(116, 116, 116);
     font-weight: bold;
 }
+li::before {
+    content: "\A0";
+    background: rgb(255, 25, 67);
+    color: rgb(255, 25, 67);
+    border-radius: 6px;
+    text-align: center;
+    float: left;
+    width: 6px;
+    left: 0px;
+    height: 100%;
+    top: 0px;
+    margin: 2px 4px;
+    visibility: hidden;
+}
 li > svg {
     margin-right: 15px;
     color: rgb(116, 116, 116);
 }
+svg:not(:root).svg-inline--fa {
+    vertical-align: bottom;
+}
 li > .svg-inline--fa {
     font-size: 18px;
+    width: 1.625em !important;
 }
-li:hover, li.active {
-    /*background-color: #1e1e1e;*/
-    /*border-radius: 10px;*/
+li > .dropdownCaret {
+    float: right;
+    color:rgb(116, 116, 116);
+}
+li:hover, li.active, li:hover::after, li.active::before {
+    visibility: visible;
     cursor: pointer;
-    border-right: 4px solid #FFF;
-    border-radius: 2px;
     color: #FFF;
 }
 li:hover > svg, li.active > svg {
     color: #FFF;
+}
+ul > li > ul {
+    margin:0;
+    /* visibility: hidden; Normally closed */
 }
